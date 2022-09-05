@@ -1,0 +1,51 @@
+type MinMax @entity {
+    minimum: String!
+    maximum: String!
+}
+
+type Attack @entity {
+    name: String!
+    type: String!
+    damage: Int!
+}
+
+type AttackFields @entity {
+   fast: [Attack]
+   special: [Attack]
+}
+
+@all("public")
+@create("public") @one("public") @update("public") @remove("public")
+type Pokemon @model {
+  name: String! @unique
+  classification: String
+  types:  [@relation(name: "TypeOnPokemon")]
+  resistant: [String]
+  weaknesses: [String]
+  weight: MinMax
+  height: MinMax
+  attacks: AttackFields
+  fleeRate: Float
+  maxCP: Int
+  maxHP: Int
+  evolutions: [@relation(name: "EvolutionOnPokemon")]
+  prevEvolutions: [@relation(name: "prevEvolutionOnPokemon")]
+  favorite: Boolean @default(false)
+  _evo: @relation(name: "EvoOnPokemon")
+}
+
+@all("public")
+@create("public") @one("public") @update("public") @remove("public")
+type Evolution @model {
+   name:  String! @unique
+   pokemon: @relation(name: "EvoOnPokemon")
+   _pokemonEvo: [@relation(name: "EvolutionOnPokemon")]
+   _prevPokemonEvo: [@relation(name: "prevEvolutionOnPokemon")]
+}
+
+@all("public")
+@create("public") @one("public") @update("public") @remove("public")
+type PokemonType @model {
+   name:  String! @unique
+   pokemons: [@relation(name: "TypeOnPokemon")]
+}
