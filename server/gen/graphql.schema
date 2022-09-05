@@ -1,0 +1,1751 @@
+
+  enum AttackOrderBy {
+  name_asc
+  name_desc
+  type_asc
+  type_desc
+  damage_asc
+  damage_desc
+}
+
+enum AttackFieldsOrderBy {
+  fast_asc
+  fast_desc
+  special_asc
+  special_desc
+}
+
+enum EvolutionOrderBy {
+  updatedAt_asc
+  updatedAt_desc
+  createdAt_asc
+  createdAt_desc
+  id_asc
+  id_desc
+  name_asc
+  name_desc
+  pokemon_asc
+  pokemon_desc
+  user_asc
+  user_desc
+}
+
+enum FileOrderBy {
+  updatedAt_asc
+  updatedAt_desc
+  createdAt_asc
+  createdAt_desc
+  id_asc
+  id_desc
+  name_asc
+  name_desc
+  publicKey_asc
+  publicKey_desc
+  type_asc
+  type_desc
+  size_asc
+  size_desc
+  data_asc
+  data_desc
+  user_asc
+  user_desc
+}
+
+enum MinMaxOrderBy {
+  minimum_asc
+  minimum_desc
+  maximum_asc
+  maximum_desc
+}
+
+enum PokemonOrderBy {
+  updatedAt_asc
+  updatedAt_desc
+  createdAt_asc
+  createdAt_desc
+  id_asc
+  id_desc
+  name_asc
+  name_desc
+  classification_asc
+  classification_desc
+  types_asc
+  types_desc
+  resistant_asc
+  resistant_desc
+  weaknesses_asc
+  weaknesses_desc
+  weight_asc
+  weight_desc
+  height_asc
+  height_desc
+  attacks_asc
+  attacks_desc
+  fleeRate_asc
+  fleeRate_desc
+  maxCP_asc
+  maxCP_desc
+  maxHP_asc
+  maxHP_desc
+  evolutions_asc
+  evolutions_desc
+  prevEvolutions_asc
+  prevEvolutions_desc
+  favorite_asc
+  favorite_desc
+  user_asc
+  user_desc
+}
+
+enum PokemonTypeOrderBy {
+  updatedAt_asc
+  updatedAt_desc
+  createdAt_asc
+  createdAt_desc
+  id_asc
+  id_desc
+  name_asc
+  name_desc
+  pokemons_asc
+  pokemons_desc
+  user_asc
+  user_desc
+}
+
+enum UserOrderBy {
+  updatedAt_asc
+  updatedAt_desc
+  createdAt_asc
+  createdAt_desc
+  id_asc
+  id_desc
+  email_asc
+  email_desc
+  password_asc
+  password_desc
+  verified_asc
+  verified_desc
+  roles_asc
+  roles_desc
+  files_asc
+  files_desc
+  _pokemon_asc
+  _pokemon_desc
+  _evolution_asc
+  _evolution_desc
+  _pokemonType_asc
+  _pokemonType_desc
+}
+
+enum UserRoleOrderBy {
+  updatedAt_asc
+  updatedAt_desc
+  createdAt_asc
+  createdAt_desc
+  id_asc
+  id_desc
+  name_asc
+  name_desc
+  users_asc
+  users_desc
+}
+
+
+
+  input AttackFilter {
+
+  AND: [AttackFilter!]
+  OR: [AttackFilter!]
+    name: String
+  # Values that are not equal to given value.
+  name_not: String
+
+  # All values that are contained in given list.
+  name_in: [String!]
+
+  # All values that are not contained in given list.
+  name_not_in: [String!]
+
+  # All values less than the given value.
+  name_lt: String
+
+  # All values less than or equal the given value.
+  name_lte: String
+
+  # All values greater than the given value.
+  name_gt: String
+
+  # All values greater than or equal the given value.
+  name_gte: String
+
+  name_contains: String
+
+  name_not_contains: String
+
+  name_starts_with: String
+
+  name_not_starts_with: String
+
+  name_ends_with: String
+
+  name_not_ends_with: String
+
+  type: String
+  # Values that are not equal to given value.
+  type_not: String
+
+  # All values that are contained in given list.
+  type_in: [String!]
+
+  # All values that are not contained in given list.
+  type_not_in: [String!]
+
+  # All values less than the given value.
+  type_lt: String
+
+  # All values less than or equal the given value.
+  type_lte: String
+
+  # All values greater than the given value.
+  type_gt: String
+
+  # All values greater than or equal the given value.
+  type_gte: String
+
+  type_contains: String
+
+  type_not_contains: String
+
+  type_starts_with: String
+
+  type_not_starts_with: String
+
+  type_ends_with: String
+
+  type_not_ends_with: String
+
+  damage: Int
+  # Values that are not equal to given value.
+  damage_not: Int
+
+  # All values that are contained in given list.
+  damage_in: [Int!]
+
+  # All values that are not contained in given list.
+  damage_not_in: [Int!]
+
+  # All values less than the given value.
+  damage_lt: Int
+
+  # All values less than or equal the given value.
+  damage_lte: Int
+
+  # All values greater than the given value.
+  damage_gt: Int
+
+  # All values greater than or equal the given value.
+  damage_gte: Int
+
+}
+
+input AttackFieldsFilter {
+
+  AND: [AttackFieldsFilter!]
+  OR: [AttackFieldsFilter!]
+    fast_every: AttackFilter
+  fast_some: AttackFilter
+  fast_none: AttackFilter
+
+  special_every: AttackFilter
+  special_some: AttackFilter
+  special_none: AttackFilter
+
+}
+
+input EvolutionFilter {
+
+  AND: [EvolutionFilter!]
+  OR: [EvolutionFilter!]
+    updatedAt: DateTime
+  # Values that are not equal to given value.
+  updatedAt_not: DateTime
+
+  # All values that are contained in given list.
+  updatedAt_in: [DateTime!]
+
+  # All values that are not contained in given list.
+  updatedAt_not_in: [DateTime!]
+
+  # All values less than the given value.
+  updatedAt_lt: DateTime
+
+  # All values less than or equal the given value.
+  updatedAt_lte: DateTime
+
+  # All values greater than the given value.
+  updatedAt_gt: DateTime
+
+  # All values greater than or equal the given value.
+  updatedAt_gte: DateTime
+
+  createdAt: DateTime
+  # Values that are not equal to given value.
+  createdAt_not: DateTime
+
+  # All values that are contained in given list.
+  createdAt_in: [DateTime!]
+
+  # All values that are not contained in given list.
+  createdAt_not_in: [DateTime!]
+
+  # All values less than the given value.
+  createdAt_lt: DateTime
+
+  # All values less than or equal the given value.
+  createdAt_lte: DateTime
+
+  # All values greater than the given value.
+  createdAt_gt: DateTime
+
+  # All values greater than or equal the given value.
+  createdAt_gte: DateTime
+
+  id: ID
+  # Values that are not equal to given value.
+  id_not: ID
+
+  # All values that are contained in given list.
+  id_in: [ID!]
+
+  # All values that are not contained in given list.
+  id_not_in: [ID!]
+
+  # All values less than the given value.
+  id_lt: ID
+
+  # All values less than or equal the given value.
+  id_lte: ID
+
+  # All values greater than the given value.
+  id_gt: ID
+
+  # All values greater than or equal the given value.
+  id_gte: ID
+
+  name: String
+  # Values that are not equal to given value.
+  name_not: String
+
+  # All values that are contained in given list.
+  name_in: [String!]
+
+  # All values that are not contained in given list.
+  name_not_in: [String!]
+
+  # All values less than the given value.
+  name_lt: String
+
+  # All values less than or equal the given value.
+  name_lte: String
+
+  # All values greater than the given value.
+  name_gt: String
+
+  # All values greater than or equal the given value.
+  name_gte: String
+
+  name_contains: String
+
+  name_not_contains: String
+
+  name_starts_with: String
+
+  name_not_starts_with: String
+
+  name_ends_with: String
+
+  name_not_ends_with: String
+
+  pokemon_every: PokemonFilter
+  pokemon_some: PokemonFilter
+  pokemon_none: PokemonFilter
+
+  user_every: UserFilter
+  user_some: UserFilter
+  user_none: UserFilter
+
+}
+
+input FileFilter {
+
+  AND: [FileFilter!]
+  OR: [FileFilter!]
+    updatedAt: DateTime
+  # Values that are not equal to given value.
+  updatedAt_not: DateTime
+
+  # All values that are contained in given list.
+  updatedAt_in: [DateTime!]
+
+  # All values that are not contained in given list.
+  updatedAt_not_in: [DateTime!]
+
+  # All values less than the given value.
+  updatedAt_lt: DateTime
+
+  # All values less than or equal the given value.
+  updatedAt_lte: DateTime
+
+  # All values greater than the given value.
+  updatedAt_gt: DateTime
+
+  # All values greater than or equal the given value.
+  updatedAt_gte: DateTime
+
+  createdAt: DateTime
+  # Values that are not equal to given value.
+  createdAt_not: DateTime
+
+  # All values that are contained in given list.
+  createdAt_in: [DateTime!]
+
+  # All values that are not contained in given list.
+  createdAt_not_in: [DateTime!]
+
+  # All values less than the given value.
+  createdAt_lt: DateTime
+
+  # All values less than or equal the given value.
+  createdAt_lte: DateTime
+
+  # All values greater than the given value.
+  createdAt_gt: DateTime
+
+  # All values greater than or equal the given value.
+  createdAt_gte: DateTime
+
+  id: ID
+  # Values that are not equal to given value.
+  id_not: ID
+
+  # All values that are contained in given list.
+  id_in: [ID!]
+
+  # All values that are not contained in given list.
+  id_not_in: [ID!]
+
+  # All values less than the given value.
+  id_lt: ID
+
+  # All values less than or equal the given value.
+  id_lte: ID
+
+  # All values greater than the given value.
+  id_gt: ID
+
+  # All values greater than or equal the given value.
+  id_gte: ID
+
+  name: String
+  # Values that are not equal to given value.
+  name_not: String
+
+  # All values that are contained in given list.
+  name_in: [String!]
+
+  # All values that are not contained in given list.
+  name_not_in: [String!]
+
+  # All values less than the given value.
+  name_lt: String
+
+  # All values less than or equal the given value.
+  name_lte: String
+
+  # All values greater than the given value.
+  name_gt: String
+
+  # All values greater than or equal the given value.
+  name_gte: String
+
+  name_contains: String
+
+  name_not_contains: String
+
+  name_starts_with: String
+
+  name_not_starts_with: String
+
+  name_ends_with: String
+
+  name_not_ends_with: String
+
+  publicKey: String
+  # Values that are not equal to given value.
+  publicKey_not: String
+
+  # All values that are contained in given list.
+  publicKey_in: [String!]
+
+  # All values that are not contained in given list.
+  publicKey_not_in: [String!]
+
+  # All values less than the given value.
+  publicKey_lt: String
+
+  # All values less than or equal the given value.
+  publicKey_lte: String
+
+  # All values greater than the given value.
+  publicKey_gt: String
+
+  # All values greater than or equal the given value.
+  publicKey_gte: String
+
+  publicKey_contains: String
+
+  publicKey_not_contains: String
+
+  publicKey_starts_with: String
+
+  publicKey_not_starts_with: String
+
+  publicKey_ends_with: String
+
+  publicKey_not_ends_with: String
+
+  type: String
+  # Values that are not equal to given value.
+  type_not: String
+
+  # All values that are contained in given list.
+  type_in: [String!]
+
+  # All values that are not contained in given list.
+  type_not_in: [String!]
+
+  # All values less than the given value.
+  type_lt: String
+
+  # All values less than or equal the given value.
+  type_lte: String
+
+  # All values greater than the given value.
+  type_gt: String
+
+  # All values greater than or equal the given value.
+  type_gte: String
+
+  type_contains: String
+
+  type_not_contains: String
+
+  type_starts_with: String
+
+  type_not_starts_with: String
+
+  type_ends_with: String
+
+  type_not_ends_with: String
+
+  size: Int
+  # Values that are not equal to given value.
+  size_not: Int
+
+  # All values that are contained in given list.
+  size_in: [Int!]
+
+  # All values that are not contained in given list.
+  size_not_in: [Int!]
+
+  # All values less than the given value.
+  size_lt: Int
+
+  # All values less than or equal the given value.
+  size_lte: Int
+
+  # All values greater than the given value.
+  size_gt: Int
+
+  # All values greater than or equal the given value.
+  size_gte: Int
+
+  data: String
+  # Values that are not equal to given value.
+  data_not: String
+
+  # All values that are contained in given list.
+  data_in: [String!]
+
+  # All values that are not contained in given list.
+  data_not_in: [String!]
+
+  # All values less than the given value.
+  data_lt: String
+
+  # All values less than or equal the given value.
+  data_lte: String
+
+  # All values greater than the given value.
+  data_gt: String
+
+  # All values greater than or equal the given value.
+  data_gte: String
+
+  data_contains: String
+
+  data_not_contains: String
+
+  data_starts_with: String
+
+  data_not_starts_with: String
+
+  data_ends_with: String
+
+  data_not_ends_with: String
+
+  user_every: UserFilter
+  user_some: UserFilter
+  user_none: UserFilter
+
+}
+
+input MinMaxFilter {
+
+  AND: [MinMaxFilter!]
+  OR: [MinMaxFilter!]
+    minimum: String
+  # Values that are not equal to given value.
+  minimum_not: String
+
+  # All values that are contained in given list.
+  minimum_in: [String!]
+
+  # All values that are not contained in given list.
+  minimum_not_in: [String!]
+
+  # All values less than the given value.
+  minimum_lt: String
+
+  # All values less than or equal the given value.
+  minimum_lte: String
+
+  # All values greater than the given value.
+  minimum_gt: String
+
+  # All values greater than or equal the given value.
+  minimum_gte: String
+
+  minimum_contains: String
+
+  minimum_not_contains: String
+
+  minimum_starts_with: String
+
+  minimum_not_starts_with: String
+
+  minimum_ends_with: String
+
+  minimum_not_ends_with: String
+
+  maximum: String
+  # Values that are not equal to given value.
+  maximum_not: String
+
+  # All values that are contained in given list.
+  maximum_in: [String!]
+
+  # All values that are not contained in given list.
+  maximum_not_in: [String!]
+
+  # All values less than the given value.
+  maximum_lt: String
+
+  # All values less than or equal the given value.
+  maximum_lte: String
+
+  # All values greater than the given value.
+  maximum_gt: String
+
+  # All values greater than or equal the given value.
+  maximum_gte: String
+
+  maximum_contains: String
+
+  maximum_not_contains: String
+
+  maximum_starts_with: String
+
+  maximum_not_starts_with: String
+
+  maximum_ends_with: String
+
+  maximum_not_ends_with: String
+
+}
+
+input PokemonFilter {
+
+  AND: [PokemonFilter!]
+  OR: [PokemonFilter!]
+    updatedAt: DateTime
+  # Values that are not equal to given value.
+  updatedAt_not: DateTime
+
+  # All values that are contained in given list.
+  updatedAt_in: [DateTime!]
+
+  # All values that are not contained in given list.
+  updatedAt_not_in: [DateTime!]
+
+  # All values less than the given value.
+  updatedAt_lt: DateTime
+
+  # All values less than or equal the given value.
+  updatedAt_lte: DateTime
+
+  # All values greater than the given value.
+  updatedAt_gt: DateTime
+
+  # All values greater than or equal the given value.
+  updatedAt_gte: DateTime
+
+  createdAt: DateTime
+  # Values that are not equal to given value.
+  createdAt_not: DateTime
+
+  # All values that are contained in given list.
+  createdAt_in: [DateTime!]
+
+  # All values that are not contained in given list.
+  createdAt_not_in: [DateTime!]
+
+  # All values less than the given value.
+  createdAt_lt: DateTime
+
+  # All values less than or equal the given value.
+  createdAt_lte: DateTime
+
+  # All values greater than the given value.
+  createdAt_gt: DateTime
+
+  # All values greater than or equal the given value.
+  createdAt_gte: DateTime
+
+  id: ID
+  # Values that are not equal to given value.
+  id_not: ID
+
+  # All values that are contained in given list.
+  id_in: [ID!]
+
+  # All values that are not contained in given list.
+  id_not_in: [ID!]
+
+  # All values less than the given value.
+  id_lt: ID
+
+  # All values less than or equal the given value.
+  id_lte: ID
+
+  # All values greater than the given value.
+  id_gt: ID
+
+  # All values greater than or equal the given value.
+  id_gte: ID
+
+  name: String
+  # Values that are not equal to given value.
+  name_not: String
+
+  # All values that are contained in given list.
+  name_in: [String!]
+
+  # All values that are not contained in given list.
+  name_not_in: [String!]
+
+  # All values less than the given value.
+  name_lt: String
+
+  # All values less than or equal the given value.
+  name_lte: String
+
+  # All values greater than the given value.
+  name_gt: String
+
+  # All values greater than or equal the given value.
+  name_gte: String
+
+  name_contains: String
+
+  name_not_contains: String
+
+  name_starts_with: String
+
+  name_not_starts_with: String
+
+  name_ends_with: String
+
+  name_not_ends_with: String
+
+  classification: String
+  # Values that are not equal to given value.
+  classification_not: String
+
+  # All values that are contained in given list.
+  classification_in: [String!]
+
+  # All values that are not contained in given list.
+  classification_not_in: [String!]
+
+  # All values less than the given value.
+  classification_lt: String
+
+  # All values less than or equal the given value.
+  classification_lte: String
+
+  # All values greater than the given value.
+  classification_gt: String
+
+  # All values greater than or equal the given value.
+  classification_gte: String
+
+  classification_contains: String
+
+  classification_not_contains: String
+
+  classification_starts_with: String
+
+  classification_not_starts_with: String
+
+  classification_ends_with: String
+
+  classification_not_ends_with: String
+
+  types_every: PokemonTypeFilter
+  types_some: PokemonTypeFilter
+  types_none: PokemonTypeFilter
+
+  resistant: String
+  # Values that are not equal to given value.
+  resistant_not: String
+
+  # All values that are contained in given list.
+  resistant_in: [String!]
+
+  # All values that are not contained in given list.
+  resistant_not_in: [String!]
+
+  # All values less than the given value.
+  resistant_lt: String
+
+  # All values less than or equal the given value.
+  resistant_lte: String
+
+  # All values greater than the given value.
+  resistant_gt: String
+
+  # All values greater than or equal the given value.
+  resistant_gte: String
+
+  resistant_contains: String
+
+  resistant_not_contains: String
+
+  resistant_starts_with: String
+
+  resistant_not_starts_with: String
+
+  resistant_ends_with: String
+
+  resistant_not_ends_with: String
+
+  weaknesses: String
+  # Values that are not equal to given value.
+  weaknesses_not: String
+
+  # All values that are contained in given list.
+  weaknesses_in: [String!]
+
+  # All values that are not contained in given list.
+  weaknesses_not_in: [String!]
+
+  # All values less than the given value.
+  weaknesses_lt: String
+
+  # All values less than or equal the given value.
+  weaknesses_lte: String
+
+  # All values greater than the given value.
+  weaknesses_gt: String
+
+  # All values greater than or equal the given value.
+  weaknesses_gte: String
+
+  weaknesses_contains: String
+
+  weaknesses_not_contains: String
+
+  weaknesses_starts_with: String
+
+  weaknesses_not_starts_with: String
+
+  weaknesses_ends_with: String
+
+  weaknesses_not_ends_with: String
+
+  weight_every: MinMaxFilter
+  weight_some: MinMaxFilter
+  weight_none: MinMaxFilter
+
+  height_every: MinMaxFilter
+  height_some: MinMaxFilter
+  height_none: MinMaxFilter
+
+  attacks_every: AttackFieldsFilter
+  attacks_some: AttackFieldsFilter
+  attacks_none: AttackFieldsFilter
+
+  fleeRate: Float
+  # Values that are not equal to given value.
+  fleeRate_not: Float
+
+  # All values that are contained in given list.
+  fleeRate_in: [Float!]
+
+  # All values that are not contained in given list.
+  fleeRate_not_in: [Float!]
+
+  # All values less than the given value.
+  fleeRate_lt: Float
+
+  # All values less than or equal the given value.
+  fleeRate_lte: Float
+
+  # All values greater than the given value.
+  fleeRate_gt: Float
+
+  # All values greater than or equal the given value.
+  fleeRate_gte: Float
+
+  maxCP: Int
+  # Values that are not equal to given value.
+  maxCP_not: Int
+
+  # All values that are contained in given list.
+  maxCP_in: [Int!]
+
+  # All values that are not contained in given list.
+  maxCP_not_in: [Int!]
+
+  # All values less than the given value.
+  maxCP_lt: Int
+
+  # All values less than or equal the given value.
+  maxCP_lte: Int
+
+  # All values greater than the given value.
+  maxCP_gt: Int
+
+  # All values greater than or equal the given value.
+  maxCP_gte: Int
+
+  maxHP: Int
+  # Values that are not equal to given value.
+  maxHP_not: Int
+
+  # All values that are contained in given list.
+  maxHP_in: [Int!]
+
+  # All values that are not contained in given list.
+  maxHP_not_in: [Int!]
+
+  # All values less than the given value.
+  maxHP_lt: Int
+
+  # All values less than or equal the given value.
+  maxHP_lte: Int
+
+  # All values greater than the given value.
+  maxHP_gt: Int
+
+  # All values greater than or equal the given value.
+  maxHP_gte: Int
+
+  evolutions_every: EvolutionFilter
+  evolutions_some: EvolutionFilter
+  evolutions_none: EvolutionFilter
+
+  prevEvolutions_every: EvolutionFilter
+  prevEvolutions_some: EvolutionFilter
+  prevEvolutions_none: EvolutionFilter
+
+  favorite: Boolean
+  # Values that are not equal to given value.
+  favorite_not: Boolean
+
+  # All values that are contained in given list.
+  favorite_in: [Boolean!]
+
+  # All values that are not contained in given list.
+  favorite_not_in: [Boolean!]
+
+  # All values less than the given value.
+  favorite_lt: Boolean
+
+  # All values less than or equal the given value.
+  favorite_lte: Boolean
+
+  # All values greater than the given value.
+  favorite_gt: Boolean
+
+  # All values greater than or equal the given value.
+  favorite_gte: Boolean
+
+  user_every: UserFilter
+  user_some: UserFilter
+  user_none: UserFilter
+
+}
+
+input PokemonTypeFilter {
+
+  AND: [PokemonTypeFilter!]
+  OR: [PokemonTypeFilter!]
+    updatedAt: DateTime
+  # Values that are not equal to given value.
+  updatedAt_not: DateTime
+
+  # All values that are contained in given list.
+  updatedAt_in: [DateTime!]
+
+  # All values that are not contained in given list.
+  updatedAt_not_in: [DateTime!]
+
+  # All values less than the given value.
+  updatedAt_lt: DateTime
+
+  # All values less than or equal the given value.
+  updatedAt_lte: DateTime
+
+  # All values greater than the given value.
+  updatedAt_gt: DateTime
+
+  # All values greater than or equal the given value.
+  updatedAt_gte: DateTime
+
+  createdAt: DateTime
+  # Values that are not equal to given value.
+  createdAt_not: DateTime
+
+  # All values that are contained in given list.
+  createdAt_in: [DateTime!]
+
+  # All values that are not contained in given list.
+  createdAt_not_in: [DateTime!]
+
+  # All values less than the given value.
+  createdAt_lt: DateTime
+
+  # All values less than or equal the given value.
+  createdAt_lte: DateTime
+
+  # All values greater than the given value.
+  createdAt_gt: DateTime
+
+  # All values greater than or equal the given value.
+  createdAt_gte: DateTime
+
+  id: ID
+  # Values that are not equal to given value.
+  id_not: ID
+
+  # All values that are contained in given list.
+  id_in: [ID!]
+
+  # All values that are not contained in given list.
+  id_not_in: [ID!]
+
+  # All values less than the given value.
+  id_lt: ID
+
+  # All values less than or equal the given value.
+  id_lte: ID
+
+  # All values greater than the given value.
+  id_gt: ID
+
+  # All values greater than or equal the given value.
+  id_gte: ID
+
+  name: String
+  # Values that are not equal to given value.
+  name_not: String
+
+  # All values that are contained in given list.
+  name_in: [String!]
+
+  # All values that are not contained in given list.
+  name_not_in: [String!]
+
+  # All values less than the given value.
+  name_lt: String
+
+  # All values less than or equal the given value.
+  name_lte: String
+
+  # All values greater than the given value.
+  name_gt: String
+
+  # All values greater than or equal the given value.
+  name_gte: String
+
+  name_contains: String
+
+  name_not_contains: String
+
+  name_starts_with: String
+
+  name_not_starts_with: String
+
+  name_ends_with: String
+
+  name_not_ends_with: String
+
+  pokemons_every: PokemonFilter
+  pokemons_some: PokemonFilter
+  pokemons_none: PokemonFilter
+
+  user_every: UserFilter
+  user_some: UserFilter
+  user_none: UserFilter
+
+}
+
+input UserFilter {
+
+  AND: [UserFilter!]
+  OR: [UserFilter!]
+    updatedAt: DateTime
+  # Values that are not equal to given value.
+  updatedAt_not: DateTime
+
+  # All values that are contained in given list.
+  updatedAt_in: [DateTime!]
+
+  # All values that are not contained in given list.
+  updatedAt_not_in: [DateTime!]
+
+  # All values less than the given value.
+  updatedAt_lt: DateTime
+
+  # All values less than or equal the given value.
+  updatedAt_lte: DateTime
+
+  # All values greater than the given value.
+  updatedAt_gt: DateTime
+
+  # All values greater than or equal the given value.
+  updatedAt_gte: DateTime
+
+  createdAt: DateTime
+  # Values that are not equal to given value.
+  createdAt_not: DateTime
+
+  # All values that are contained in given list.
+  createdAt_in: [DateTime!]
+
+  # All values that are not contained in given list.
+  createdAt_not_in: [DateTime!]
+
+  # All values less than the given value.
+  createdAt_lt: DateTime
+
+  # All values less than or equal the given value.
+  createdAt_lte: DateTime
+
+  # All values greater than the given value.
+  createdAt_gt: DateTime
+
+  # All values greater than or equal the given value.
+  createdAt_gte: DateTime
+
+  id: ID
+  # Values that are not equal to given value.
+  id_not: ID
+
+  # All values that are contained in given list.
+  id_in: [ID!]
+
+  # All values that are not contained in given list.
+  id_not_in: [ID!]
+
+  # All values less than the given value.
+  id_lt: ID
+
+  # All values less than or equal the given value.
+  id_lte: ID
+
+  # All values greater than the given value.
+  id_gt: ID
+
+  # All values greater than or equal the given value.
+  id_gte: ID
+
+  email: String
+  # Values that are not equal to given value.
+  email_not: String
+
+  # All values that are contained in given list.
+  email_in: [String!]
+
+  # All values that are not contained in given list.
+  email_not_in: [String!]
+
+  # All values less than the given value.
+  email_lt: String
+
+  # All values less than or equal the given value.
+  email_lte: String
+
+  # All values greater than the given value.
+  email_gt: String
+
+  # All values greater than or equal the given value.
+  email_gte: String
+
+  email_contains: String
+
+  email_not_contains: String
+
+  email_starts_with: String
+
+  email_not_starts_with: String
+
+  email_ends_with: String
+
+  email_not_ends_with: String
+
+  password: String
+  # Values that are not equal to given value.
+  password_not: String
+
+  # All values that are contained in given list.
+  password_in: [String!]
+
+  # All values that are not contained in given list.
+  password_not_in: [String!]
+
+  # All values less than the given value.
+  password_lt: String
+
+  # All values less than or equal the given value.
+  password_lte: String
+
+  # All values greater than the given value.
+  password_gt: String
+
+  # All values greater than or equal the given value.
+  password_gte: String
+
+  password_contains: String
+
+  password_not_contains: String
+
+  password_starts_with: String
+
+  password_not_starts_with: String
+
+  password_ends_with: String
+
+  password_not_ends_with: String
+
+  verified: Boolean
+  # Values that are not equal to given value.
+  verified_not: Boolean
+
+  # All values that are contained in given list.
+  verified_in: [Boolean!]
+
+  # All values that are not contained in given list.
+  verified_not_in: [Boolean!]
+
+  # All values less than the given value.
+  verified_lt: Boolean
+
+  # All values less than or equal the given value.
+  verified_lte: Boolean
+
+  # All values greater than the given value.
+  verified_gt: Boolean
+
+  # All values greater than or equal the given value.
+  verified_gte: Boolean
+
+  roles_every: UserRoleFilter
+  roles_some: UserRoleFilter
+  roles_none: UserRoleFilter
+
+  files_every: FileFilter
+  files_some: FileFilter
+  files_none: FileFilter
+
+  _pokemon_every: PokemonFilter
+  _pokemon_some: PokemonFilter
+  _pokemon_none: PokemonFilter
+
+  _evolution_every: EvolutionFilter
+  _evolution_some: EvolutionFilter
+  _evolution_none: EvolutionFilter
+
+  _pokemonType_every: PokemonTypeFilter
+  _pokemonType_some: PokemonTypeFilter
+  _pokemonType_none: PokemonTypeFilter
+
+}
+
+input UserRoleFilter {
+
+  AND: [UserRoleFilter!]
+  OR: [UserRoleFilter!]
+    updatedAt: DateTime
+  # Values that are not equal to given value.
+  updatedAt_not: DateTime
+
+  # All values that are contained in given list.
+  updatedAt_in: [DateTime!]
+
+  # All values that are not contained in given list.
+  updatedAt_not_in: [DateTime!]
+
+  # All values less than the given value.
+  updatedAt_lt: DateTime
+
+  # All values less than or equal the given value.
+  updatedAt_lte: DateTime
+
+  # All values greater than the given value.
+  updatedAt_gt: DateTime
+
+  # All values greater than or equal the given value.
+  updatedAt_gte: DateTime
+
+  createdAt: DateTime
+  # Values that are not equal to given value.
+  createdAt_not: DateTime
+
+  # All values that are contained in given list.
+  createdAt_in: [DateTime!]
+
+  # All values that are not contained in given list.
+  createdAt_not_in: [DateTime!]
+
+  # All values less than the given value.
+  createdAt_lt: DateTime
+
+  # All values less than or equal the given value.
+  createdAt_lte: DateTime
+
+  # All values greater than the given value.
+  createdAt_gt: DateTime
+
+  # All values greater than or equal the given value.
+  createdAt_gte: DateTime
+
+  id: ID
+  # Values that are not equal to given value.
+  id_not: ID
+
+  # All values that are contained in given list.
+  id_in: [ID!]
+
+  # All values that are not contained in given list.
+  id_not_in: [ID!]
+
+  # All values less than the given value.
+  id_lt: ID
+
+  # All values less than or equal the given value.
+  id_lte: ID
+
+  # All values greater than the given value.
+  id_gt: ID
+
+  # All values greater than or equal the given value.
+  id_gte: ID
+
+  name: String
+  # Values that are not equal to given value.
+  name_not: String
+
+  # All values that are contained in given list.
+  name_in: [String!]
+
+  # All values that are not contained in given list.
+  name_not_in: [String!]
+
+  # All values less than the given value.
+  name_lt: String
+
+  # All values less than or equal the given value.
+  name_lte: String
+
+  # All values greater than the given value.
+  name_gt: String
+
+  # All values greater than or equal the given value.
+  name_gte: String
+
+  name_contains: String
+
+  name_not_contains: String
+
+  name_starts_with: String
+
+  name_not_starts_with: String
+
+  name_ends_with: String
+
+  name_not_ends_with: String
+
+  users_every: UserFilter
+  users_some: UserFilter
+  users_none: UserFilter
+
+}
+
+
+
+  
+  type AttackModel {
+    name: String!
+    type: String!
+    damage: Int!
+  }
+
+  type AttackModelRemove {
+    id: ID!
+  }
+
+  type AttackFieldsModel {
+    fast: [AttackModel!]
+    special: [AttackModel!]
+  }
+
+  type AttackFieldsModelRemove {
+    id: ID!
+  }
+
+  type EvolutionModel {
+    updatedAt: DateTime
+    createdAt: DateTime
+    id: ID!
+    name: String!
+    pokemon: PokemonModel
+    user: UserModel
+  }
+
+  type EvolutionModelRemove {
+    id: ID!
+  }
+
+  type FileModel {
+    updatedAt: DateTime
+    createdAt: DateTime
+    id: ID!
+    name: String!
+    publicKey: String!
+    type: String!
+    size: Int!
+    data: String!
+    user: UserModel
+  }
+
+  type FileModelRemove {
+    id: ID!
+  }
+
+  type MinMaxModel {
+    minimum: String!
+    maximum: String!
+  }
+
+  type MinMaxModelRemove {
+    id: ID!
+  }
+
+  type PokemonModel {
+    updatedAt: DateTime
+    createdAt: DateTime
+    id: ID!
+    name: String!
+    classification: String
+    types: [PokemonTypeModel!]
+    resistant: [String]
+    weaknesses: [String]
+    weight: MinMaxModel
+    height: MinMaxModel
+    attacks: AttackFieldsModel
+    fleeRate: Float
+    maxCP: Int
+    maxHP: Int
+    evolutions: [EvolutionModel!]
+    prevEvolutions: [EvolutionModel!]
+    favorite: Boolean
+    user: UserModel
+  }
+
+  type PokemonModelRemove {
+    id: ID!
+  }
+
+  type PokemonTypeModel {
+    updatedAt: DateTime
+    createdAt: DateTime
+    id: ID!
+    name: String!
+    pokemons: [PokemonModel!]
+    user: UserModel
+  }
+
+  type PokemonTypeModelRemove {
+    id: ID!
+  }
+
+  type UserModel {
+    updatedAt: DateTime
+    createdAt: DateTime
+    id: ID!
+    email: String!
+    password: String!
+    verified: Boolean
+    roles: [UserRoleModel!]
+    files: [FileModel!]
+    _pokemon: [PokemonModel!]
+    _evolution: [EvolutionModel!]
+    _pokemonType: [PokemonTypeModel!]
+  }
+
+  type UserModelRemove {
+    id: ID!
+  }
+
+  type UserRoleModel {
+    updatedAt: DateTime
+    createdAt: DateTime
+    id: ID!
+    name: String!
+    users: [UserModel!]
+  }
+
+  type UserRoleModelRemove {
+    id: ID!
+  }
+
+
+  type UserToken {
+    token: String!
+    refreshToken: String!
+    user: UserModel!
+  }
+
+  type VerifiedUserToken {
+    token: String
+    refreshToken: String
+    user: UserModel!
+  }
+
+  type VerifyEmailResendStatus {
+    email: String!
+    status: String!
+  }
+
+  type ForgottenPasswordStatus {
+    email: String!
+    status: String!
+  }
+
+  type ForgottenPasswordCheckStatus {
+    token: String!
+    status: String!
+  }
+
+  type LogoutStatus {
+    status: String!
+  }
+
+  # on model Pokemon - types
+type LinkTypeOnPokemonResult {
+  pokemonId: ID!
+  pokemonTypeId: ID!
+  pokemon: PokemonModel
+  pokemonType: PokemonTypeModel
+  pokemonModifiedCount: Int
+  pokemonTypeModifiedCount: Int
+}
+
+# on model Pokemon - evolutions
+type LinkEvolutionOnPokemonResult {
+  pokemonId: ID!
+  evolutionId: ID!
+  pokemon: PokemonModel
+  evolution: EvolutionModel
+  pokemonModifiedCount: Int
+  evolutionModifiedCount: Int
+}
+
+# on model Pokemon - prevEvolutions
+type LinkPrevEvolutionOnPokemonResult {
+  pokemonId: ID!
+  evolutionId: ID!
+  pokemon: PokemonModel
+  evolution: EvolutionModel
+  pokemonModifiedCount: Int
+  evolutionModifiedCount: Int
+}
+
+# on model Pokemon - _evo
+type LinkEvoOnPokemonResult {
+  pokemonId: ID!
+  evolutionId: ID!
+  pokemon: PokemonModel
+  evolution: EvolutionModel
+  pokemonModifiedCount: Int
+  evolutionModifiedCount: Int
+}
+
+# on model User - roles
+type AddRoleToUserResult {
+  userId: ID!
+  userRoleId: ID!
+  user: UserModel
+  userRole: UserRoleModel
+  userModifiedCount: Int
+  userRoleModifiedCount: Int
+}
+
+type Query {
+          allEvolution(filter: EvolutionFilter, orderBy: EvolutionOrderBy, limit: Int, skip: Int): [EvolutionModel!]!
+            countEvolution(filter: EvolutionFilter): Int!
+            Evolution(id: ID): EvolutionModel
+
+
+              allFile(filter: FileFilter, orderBy: FileOrderBy, limit: Int, skip: Int): [FileModel!]!
+            countFile(filter: FileFilter): Int!
+            File(id: ID): FileModel
+
+
+              allPokemon(filter: PokemonFilter, orderBy: PokemonOrderBy, limit: Int, skip: Int): [PokemonModel!]!
+            countPokemon(filter: PokemonFilter): Int!
+            Pokemon(id: ID): PokemonModel
+
+
+              allPokemonType(filter: PokemonTypeFilter, orderBy: PokemonTypeOrderBy, limit: Int, skip: Int): [PokemonTypeModel!]!
+            countPokemonType(filter: PokemonTypeFilter): Int!
+            PokemonType(id: ID): PokemonTypeModel
+
+
+              allUser(filter: UserFilter, orderBy: UserOrderBy, limit: Int, skip: Int): [UserModel!]!
+            countUser(filter: UserFilter): Int!
+            User(id: ID): UserModel
+
+
+              allUserRole(filter: UserRoleFilter, orderBy: UserRoleOrderBy, limit: Int, skip: Int): [UserRoleModel!]!
+            countUserRole(filter: UserRoleFilter): Int!
+            UserRole(id: ID): UserRoleModel
+
+
+            
+    }input InAttackMemberFastAsAttack {
+name: String!, type: String!, damage: Int!
+}
+input InAttackMemberSpecialAsAttack {
+name: String!, type: String!, damage: Int!
+}
+input InEvolutionMemberPokemonAsPokemon {
+name: String!, classification: String, typesIds: [ID], types: [InPokemonMemberTypesAsPokemonType], resistant: [String], weaknesses: [String], weight: InMinMaxMemberWeightAsMinMax, height: InMinMaxMemberHeightAsMinMax, attacks: InAttackFieldsMemberAttacksAsAttackFields, fleeRate: Float, maxCP: Int, maxHP: Int, favorite: Boolean, userId: ID
+}
+input InEvolutionMember_pokemonEvoAsPokemon {
+name: String!, classification: String, typesIds: [ID], types: [InPokemonMemberTypesAsPokemonType], resistant: [String], weaknesses: [String], weight: InMinMaxMemberWeightAsMinMax, height: InMinMaxMemberHeightAsMinMax, attacks: InAttackFieldsMemberAttacksAsAttackFields, fleeRate: Float, maxCP: Int, maxHP: Int, favorite: Boolean, userId: ID
+}
+input InEvolutionMember_prevPokemonEvoAsPokemon {
+name: String!, classification: String, typesIds: [ID], types: [InPokemonMemberTypesAsPokemonType], resistant: [String], weaknesses: [String], weight: InMinMaxMemberWeightAsMinMax, height: InMinMaxMemberHeightAsMinMax, attacks: InAttackFieldsMemberAttacksAsAttackFields, fleeRate: Float, maxCP: Int, maxHP: Int, favorite: Boolean, userId: ID
+}
+input InPokemonMemberTypesAsPokemonType {
+name: String!, userId: ID
+}
+input InMinMaxMemberWeightAsMinMax {
+minimum: String!, maximum: String!
+}
+input InMinMaxMemberHeightAsMinMax {
+minimum: String!, maximum: String!
+}
+input InAttackFieldsMemberAttacksAsAttackFields {
+fast: [InAttackMemberFastAsAttack], special: [InAttackMemberSpecialAsAttack]
+}
+input InPokemonMemberEvolutionsAsEvolution {
+name: String!, userId: ID
+}
+input InPokemonMemberPrevEvolutionsAsEvolution {
+name: String!, userId: ID
+}
+input InPokemonMember_evoAsEvolution {
+name: String!, userId: ID
+}
+input InPokemonTypeMemberPokemonsAsPokemon {
+name: String!, classification: String, resistant: [String], weaknesses: [String], weight: InMinMaxMemberWeightAsMinMax, height: InMinMaxMemberHeightAsMinMax, attacks: InAttackFieldsMemberAttacksAsAttackFields, fleeRate: Float, maxCP: Int, maxHP: Int, evolutionsIds: [ID], evolutions: [InPokemonMemberEvolutionsAsEvolution], prevEvolutionsIds: [ID], prevEvolutions: [InPokemonMemberPrevEvolutionsAsEvolution], favorite: Boolean, _evoId: ID, _evo: InPokemonMember_evoAsEvolution, userId: ID
+}
+input UserrolesUserRole {
+name: String!
+}
+
+type Mutation {
+  createEvolution(name: String!, pokemonId: ID, pokemon: InEvolutionMemberPokemonAsPokemon, _pokemonEvoIds: [ID], _pokemonEvo: [InEvolutionMember_pokemonEvoAsPokemon], _prevPokemonEvoIds: [ID], _prevPokemonEvo: [InEvolutionMember_prevPokemonEvoAsPokemon], userId: ID): EvolutionModel
+  updateEvolution(id: ID!, name: String, pokemonId: ID, pokemon: InEvolutionMemberPokemonAsPokemon, _pokemonEvoIds: [ID], _pokemonEvo: [InEvolutionMember_pokemonEvoAsPokemon], _prevPokemonEvoIds: [ID], _prevPokemonEvo: [InEvolutionMember_prevPokemonEvoAsPokemon], userId: ID): EvolutionModel
+  removeEvolution(id: ID!): EvolutionModel
+  createFile(name: String!, type: String, data: String!, userId: ID): FileModel
+  updateFile(id: ID!, name: String, type: String, data: String, userId: ID): FileModel
+  removeFile(id: ID!): FileModel
+  createPokemon(name: String!, classification: String, typesIds: [ID], types: [InPokemonMemberTypesAsPokemonType], resistant: [String], weaknesses: [String], weight: InMinMaxMemberWeightAsMinMax, height: InMinMaxMemberHeightAsMinMax, attacks: InAttackFieldsMemberAttacksAsAttackFields, fleeRate: Float, maxCP: Int, maxHP: Int, evolutionsIds: [ID], evolutions: [InPokemonMemberEvolutionsAsEvolution], prevEvolutionsIds: [ID], prevEvolutions: [InPokemonMemberPrevEvolutionsAsEvolution], favorite: Boolean, _evoId: ID, _evo: InPokemonMember_evoAsEvolution, userId: ID): PokemonModel
+  updatePokemon(id: ID!, name: String, classification: String, typesIds: [ID], types: [InPokemonMemberTypesAsPokemonType], resistant: [String], weaknesses: [String], weight: InMinMaxMemberWeightAsMinMax, height: InMinMaxMemberHeightAsMinMax, attacks: InAttackFieldsMemberAttacksAsAttackFields, fleeRate: Float, maxCP: Int, maxHP: Int, evolutionsIds: [ID], evolutions: [InPokemonMemberEvolutionsAsEvolution], prevEvolutionsIds: [ID], prevEvolutions: [InPokemonMemberPrevEvolutionsAsEvolution], favorite: Boolean, _evoId: ID, _evo: InPokemonMember_evoAsEvolution, userId: ID): PokemonModel
+  removePokemon(id: ID!): PokemonModel
+linkTypeOnPokemon(pokemonId: ID!, pokemonTypeId: ID!): LinkTypeOnPokemonResult
+unlinkTypeOnPokemon(pokemonId: ID!, pokemonTypeId: ID!): LinkTypeOnPokemonResult
+linkEvolutionOnPokemon(pokemonId: ID!, evolutionId: ID!): LinkEvolutionOnPokemonResult
+unlinkEvolutionOnPokemon(pokemonId: ID!, evolutionId: ID!): LinkEvolutionOnPokemonResult
+linkPrevEvolutionOnPokemon(pokemonId: ID!, evolutionId: ID!): LinkPrevEvolutionOnPokemonResult
+unlinkPrevEvolutionOnPokemon(pokemonId: ID!, evolutionId: ID!): LinkPrevEvolutionOnPokemonResult
+linkEvoOnPokemon(pokemonId: ID!, evolutionId: ID!): LinkEvoOnPokemonResult
+unlinkEvoOnPokemon(pokemonId: ID!, evolutionId: ID!): LinkEvoOnPokemonResult
+  createPokemonType(name: String!, pokemonsIds: [ID], pokemons: [InPokemonTypeMemberPokemonsAsPokemon], userId: ID): PokemonTypeModel
+  updatePokemonType(id: ID!, name: String, pokemonsIds: [ID], pokemons: [InPokemonTypeMemberPokemonsAsPokemon], userId: ID): PokemonTypeModel
+  removePokemonType(id: ID!): PokemonTypeModel
+  updateUser(id: ID!, rolesIds: [ID], roles: [UserrolesUserRole]): UserModel
+  removeUser(id: ID!): UserModel
+addRoleToUser(userId: ID!, userRoleId: ID!): AddRoleToUserResult
+removeRoleFromUser(userId: ID!, userRoleId: ID!): AddRoleToUserResult
+  createUserRole(name: String!, usersIds: [ID]): UserRoleModel
+  updateUserRole(id: ID!, name: String, usersIds: [ID]): UserRoleModel
+  removeUserRole(id: ID!): UserRoleModel
+   login_v1(email: String!, password: String!): UserToken
+   register_v1(email: String, password: String): UserToken
+   logout_v1(userId: ID!): LogoutStatus
+   refreshToken_v1(userId: ID!, token: String!, refreshToken: String!): UserToken
+   changePassword_v1(userId: ID!, oldPassword: String!, newPassword: String!): UserToken
+   forgottenPassword_v1(email: String!): ForgottenPasswordStatus
+   forgottenPasswordCheck_v1(token: String!): ForgottenPasswordCheckStatus
+   forgottenPasswordReset_v1(token: String!, password: String!): UserToken
+   verifyEmail_v1(verifyToken: String!): VerifiedUserToken
+   verifyEmailResend_v1(userId: ID!): VerifyEmailResendStatus
+}
+
+
+
+  # An object with an ID
+  interface Node {
+    # The id of the object.
+    id: ID!
+  }
+  
+  scalar DateTime
+    

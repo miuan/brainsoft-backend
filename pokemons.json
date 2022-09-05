@@ -79,7 +79,7 @@
       "maximum": "1.13m"
     },
     "fleeRate": 0.07,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 1,
         "name": "Bulbasaur"
@@ -145,7 +145,7 @@
       "maximum": "2.25m"
     },
     "fleeRate": 0.05,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 1,
         "name": "Bulbasaur"
@@ -269,7 +269,7 @@
       "maximum": "1.24m"
     },
     "fleeRate": 0.07,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 4,
         "name": "Charmander"
@@ -335,7 +335,7 @@
       "maximum": "1.91m"
     },
     "fleeRate": 0.05,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 4,
         "name": "Charmander"
@@ -459,7 +459,7 @@
       "maximum": "1.13m"
     },
     "fleeRate": 0.07,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 7,
         "name": "Squirtle"
@@ -530,7 +530,7 @@
       "maximum": "1.8m"
     },
     "fleeRate": 0.05,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 7,
         "name": "Squirtle"
@@ -649,7 +649,7 @@
       "maximum": "0.79m"
     },
     "fleeRate": 0.09,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 10,
         "name": "Caterpie"
@@ -705,7 +705,7 @@
       "maximum": "1.24m"
     },
     "fleeRate": 0.06,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 10,
         "name": "Caterpie"
@@ -819,7 +819,7 @@
       "maximum": "0.68m"
     },
     "fleeRate": 0.09,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 13,
         "name": "Weedle"
@@ -875,7 +875,7 @@
       "maximum": "1.13m"
     },
     "fleeRate": 0.06,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 13,
         "name": "Weedle"
@@ -999,7 +999,7 @@
       "maximum": "1.24m"
     },
     "fleeRate": 0.09,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 16,
         "name": "Pidgey"
@@ -1065,7 +1065,7 @@
       "maximum": "1.69m"
     },
     "fleeRate": 0.06,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 16,
         "name": "Pidgey"
@@ -1185,7 +1185,7 @@
       "maximum": "0.79m"
     },
     "fleeRate": 0.07,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 19,
         "name": "Rattata"
@@ -1301,7 +1301,7 @@
       "maximum": "1.35m"
     },
     "fleeRate": 0.07,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 21,
         "name": "Spearow"
@@ -1417,7 +1417,7 @@
       "maximum": "3.94m"
     },
     "fleeRate": 0.07,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 23,
         "name": "Ekans"
@@ -1533,7 +1533,7 @@
       "maximum": "0.9m"
     },
     "fleeRate": 0.06,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 25,
         "name": "Pikachu"
@@ -1649,7 +1649,7 @@
       "maximum": "1.13m"
     },
     "fleeRate": 0.06,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 27,
         "name": "Sandshrew"
@@ -1769,7 +1769,7 @@
       "maximum": "0.9m"
     },
     "fleeRate": 0.07,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 29,
         "name": "Nidoran-F"
@@ -1835,7 +1835,7 @@
       "maximum": "1.46m"
     },
     "fleeRate": 0.05,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 29,
         "name": "Nidoran-F"
@@ -1959,7 +1959,7 @@
       "maximum": "1.01m"
     },
     "fleeRate": 0.07,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 32,
         "name": "Nidoran-M"
@@ -2025,7 +2025,7 @@
       "maximum": "1.57m"
     },
     "fleeRate": 0.05,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 32,
         "name": "Nidoran-M"
@@ -2145,7 +2145,7 @@
       "maximum": "1.46m"
     },
     "fleeRate": 0.06,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 35,
         "name": "Clefairy"
@@ -2261,7 +2261,7 @@
       "maximum": "1.24m"
     },
     "fleeRate": 0.06,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 37,
         "name": "Vulpix"
@@ -2377,7 +2377,7 @@
       "maximum": "1.13m"
     },
     "fleeRate": 0.06,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 40,
         "name": "Wigglytuff"
@@ -2493,7 +2493,7 @@
       "maximum": "1.8m"
     },
     "fleeRate": 0.07,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 41,
         "name": "Zubat"
@@ -2613,7 +2613,7 @@
       "maximum": "0.9m"
     },
     "fleeRate": 0.07,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 43,
         "name": "Oddish"
@@ -2679,7 +2679,7 @@
       "maximum": "1.35m"
     },
     "fleeRate": 0.05,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 43,
         "name": "Oddish"
@@ -2799,7 +2799,7 @@
       "maximum": "1.13m"
     },
     "fleeRate": 0.07,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 46,
         "name": "Paras"
@@ -2915,7 +2915,7 @@
       "maximum": "1.69m"
     },
     "fleeRate": 0.07,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 48,
         "name": "Venonat"
@@ -3031,7 +3031,7 @@
       "maximum": "0.79m"
     },
     "fleeRate": 0.06,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 50,
         "name": "Diglett"
@@ -3147,7 +3147,7 @@
       "maximum": "1.13m"
     },
     "fleeRate": 0.07,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 52,
         "name": "Meowth"
@@ -3263,7 +3263,7 @@
       "maximum": "1.91m"
     },
     "fleeRate": 0.06,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 54,
         "name": "Psyduck"
@@ -3384,7 +3384,7 @@
       "maximum": "1.13m"
     },
     "fleeRate": 0.06,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 56,
         "name": "Mankey"
@@ -3500,7 +3500,7 @@
       "maximum": "2.14m"
     },
     "fleeRate": 0.06,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 58,
         "name": "Growlithe"
@@ -3620,7 +3620,7 @@
       "maximum": "1.13m"
     },
     "fleeRate": 0.07,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 60,
         "name": "Poliwag"
@@ -3686,7 +3686,7 @@
       "maximum": "1.46m"
     },
     "fleeRate": 0.05,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 60,
         "name": "Poliwag"
@@ -3805,7 +3805,7 @@
       "maximum": "1.46m"
     },
     "fleeRate": 0.07,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 63,
         "name": "Abra"
@@ -3871,7 +3871,7 @@
       "maximum": "1.69m"
     },
     "fleeRate": 0.05,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 63,
         "name": "Abra"
@@ -3995,7 +3995,7 @@
       "maximum": "1.69m"
     },
     "fleeRate": 0.07,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 66,
         "name": "Machop"
@@ -4061,7 +4061,7 @@
       "maximum": "1.8m"
     },
     "fleeRate": 0.05,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 66,
         "name": "Machop"
@@ -4185,7 +4185,7 @@
       "maximum": "1.13m"
     },
     "fleeRate": 0.07,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 69,
         "name": "Bellsprout"
@@ -4251,7 +4251,7 @@
       "maximum": "1.91m"
     },
     "fleeRate": 0.05,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 69,
         "name": "Bellsprout"
@@ -4389,7 +4389,7 @@
       "maximum": "1.8m"
     },
     "fleeRate": 0.07,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 72,
         "name": "Tentacool"
@@ -4509,7 +4509,7 @@
       "maximum": "1.13m"
     },
     "fleeRate": 0.07,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 74,
         "name": "Geodude"
@@ -4575,7 +4575,7 @@
       "maximum": "1.57m"
     },
     "fleeRate": 0.05,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 74,
         "name": "Geodude"
@@ -4695,7 +4695,7 @@
       "maximum": "1.91m"
     },
     "fleeRate": 0.06,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 77,
         "name": "Ponyta"
@@ -4811,7 +4811,7 @@
       "maximum": "1.8m"
     },
     "fleeRate": 0.06,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 79,
         "name": "Slowpoke"
@@ -4953,7 +4953,7 @@
       "maximum": "1.13m"
     },
     "fleeRate": 0.06,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 81,
         "name": "Magnemite"
@@ -5116,7 +5116,7 @@
       "maximum": "2.02m"
     },
     "fleeRate": 0.06,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 84,
         "name": "Doduo"
@@ -5232,7 +5232,7 @@
       "maximum": "1.91m"
     },
     "fleeRate": 0.06,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 86,
         "name": "Seel"
@@ -5348,7 +5348,7 @@
       "maximum": "1.35m"
     },
     "fleeRate": 0.06,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 88,
         "name": "Grimer"
@@ -5464,7 +5464,7 @@
       "maximum": "1.69m"
     },
     "fleeRate": 0.06,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 90,
         "name": "Shellder"
@@ -5584,7 +5584,7 @@
       "maximum": "1.8m"
     },
     "fleeRate": 0.07,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 92,
         "name": "Gastly"
@@ -5650,7 +5650,7 @@
       "maximum": "1.69m"
     },
     "fleeRate": 0.05,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 92,
         "name": "Gastly"
@@ -5820,7 +5820,7 @@
       "maximum": "1.8m"
     },
     "fleeRate": 0.06,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 96,
         "name": "Drowzee"
@@ -5936,7 +5936,7 @@
       "maximum": "1.46m"
     },
     "fleeRate": 0.07,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 98,
         "name": "Krabby"
@@ -6052,7 +6052,7 @@
       "maximum": "1.35m"
     },
     "fleeRate": 0.06,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 100,
         "name": "Voltorb"
@@ -6177,7 +6177,7 @@
       "maximum": "2.25m"
     },
     "fleeRate": 0.06,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 102,
         "name": "Exeggcute"
@@ -6293,7 +6293,7 @@
       "maximum": "1.13m"
     },
     "fleeRate": 0.06,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 104,
         "name": "Cubone"
@@ -6564,7 +6564,7 @@
       "maximum": "1.35m"
     },
     "fleeRate": 0.06,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 109,
         "name": "Koffing"
@@ -6680,7 +6680,7 @@
       "maximum": "2.14m"
     },
     "fleeRate": 0.06,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 111,
         "name": "Rhyhorn"
@@ -6943,7 +6943,7 @@
       "maximum": "1.35m"
     },
     "fleeRate": 0.06,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 116,
         "name": "Horsea"
@@ -7059,7 +7059,7 @@
       "maximum": "1.46m"
     },
     "fleeRate": 0.07,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 118,
         "name": "Goldeen"
@@ -7175,7 +7175,7 @@
       "maximum": "1.24m"
     },
     "fleeRate": 0.06,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 120,
         "name": "Staryu"
@@ -7630,7 +7630,7 @@
       "maximum": "7.31m"
     },
     "fleeRate": 0.07,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 129,
         "name": "Magikarp"
@@ -7839,7 +7839,7 @@
       "maximum": "1.13m"
     },
     "fleeRate": 0.06,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 133,
         "name": "Eevee"
@@ -7890,7 +7890,7 @@
       "maximum": "0.9m"
     },
     "fleeRate": 0.06,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 133,
         "name": "Eevee"
@@ -7941,7 +7941,7 @@
       "maximum": "1.01m"
     },
     "fleeRate": 0.06,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 133,
         "name": "Eevee"
@@ -8102,7 +8102,7 @@
       "maximum": "1.13m"
     },
     "fleeRate": 0.05,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 138,
         "name": "Omanyte"
@@ -8218,7 +8218,7 @@
       "maximum": "1.46m"
     },
     "fleeRate": 0.05,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 140,
         "name": "Kabuto"
@@ -8570,7 +8570,7 @@
       "maximum": "4.5m"
     },
     "fleeRate": 0.06,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 147,
         "name": "Dratini"
@@ -8631,7 +8631,7 @@
       "maximum": "2.48m"
     },
     "fleeRate": 0.05,
-    "Previous evolution(s)": [
+    "prevEvolutions": [
       {
         "id": 147,
         "name": "Dratini"
